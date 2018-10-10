@@ -10,6 +10,7 @@
 		906E6476216DD891005F3058 /* LottoAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906E646C216DD891005F3058 /* LottoAPI.framework */; };
 		906E647B216DD891005F3058 /* LottoAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E647A216DD891005F3058 /* LottoAPITests.swift */; };
 		906E647D216DD891005F3058 /* LottoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 906E646F216DD891005F3058 /* LottoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		906E6487216DDAE6005F3058 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E6486216DDAE6005F3058 /* GameType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		906E6475216DD891005F3058 /* LottoAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LottoAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		906E647A216DD891005F3058 /* LottoAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoAPITests.swift; sourceTree = "<group>"; };
 		906E647C216DD891005F3058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		906E6486216DDAE6005F3058 /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				906E646F216DD891005F3058 /* LottoAPI.h */,
 				906E6470216DD891005F3058 /* Info.plist */,
+				906E6486216DDAE6005F3058 /* GameType.swift */,
 			);
 			path = LottoAPI;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					906E646B216DD891005F3058 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					906E6474216DD891005F3058 = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				906E6487216DDAE6005F3058 /* GameType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		906E6481216DD891005F3058 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moskala.michal.LottoAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		906E6482216DD891005F3058 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		906E6484216DD891005F3058 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R77HUFLYN8;
 				INFOPLIST_FILE = LottoAPITests/Info.plist;
@@ -409,6 +418,7 @@
 		906E6485216DD891005F3058 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R77HUFLYN8;
 				INFOPLIST_FILE = LottoAPITests/Info.plist;
