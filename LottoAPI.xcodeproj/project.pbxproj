@@ -11,6 +11,7 @@
 		906E647B216DD891005F3058 /* LottoAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E647A216DD891005F3058 /* LottoAPITests.swift */; };
 		906E647D216DD891005F3058 /* LottoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 906E646F216DD891005F3058 /* LottoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		906E6487216DDAE6005F3058 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E6486216DDAE6005F3058 /* GameType.swift */; };
+		906E648A216DDBE4005F3058 /* ConfigurationData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 906E6489216DDBE4005F3058 /* ConfigurationData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		906E647A216DD891005F3058 /* LottoAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoAPITests.swift; sourceTree = "<group>"; };
 		906E647C216DD891005F3058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		906E6486216DDAE6005F3058 /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
+		906E6489216DDBE4005F3058 /* ConfigurationData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ConfigurationData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		906E646E216DD891005F3058 /* LottoAPI */ = {
 			isa = PBXGroup;
 			children = (
+				906E6488216DDBCF005F3058 /* Configuration */,
 				906E646F216DD891005F3058 /* LottoAPI.h */,
 				906E6470216DD891005F3058 /* Info.plist */,
 				906E6486216DDAE6005F3058 /* GameType.swift */,
@@ -87,6 +90,14 @@
 				906E647C216DD891005F3058 /* Info.plist */,
 			);
 			path = LottoAPITests;
+			sourceTree = "<group>";
+		};
+		906E6488216DDBCF005F3058 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				906E6489216DDBE4005F3058 /* ConfigurationData.plist */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				906E648A216DDBE4005F3058 /* ConfigurationData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
