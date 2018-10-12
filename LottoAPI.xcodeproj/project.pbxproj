@@ -21,6 +21,7 @@
 		906E6487216DDAE6005F3058 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E6486216DDAE6005F3058 /* GameType.swift */; };
 		906E648A216DDBE4005F3058 /* ConfigurationData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 906E6489216DDBE4005F3058 /* ConfigurationData.plist */; };
 		90A6A8792170B316008A4BA9 /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A6A8782170B316008A4BA9 /* JSONDecoder+Extensions.swift */; };
+		90A6A87B2170B5F8008A4BA9 /* AllLotteriesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A6A87A2170B5F8008A4BA9 /* AllLotteriesResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		906E6486216DDAE6005F3058 /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
 		906E6489216DDBE4005F3058 /* ConfigurationData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ConfigurationData.plist; sourceTree = "<group>"; };
 		90A6A8782170B316008A4BA9 /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
+		90A6A87A2170B5F8008A4BA9 /* AllLotteriesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLotteriesResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				9028BDD021707D2900FE7053 /* LotteryResult.swift */,
 				9028BDD22170808E00FE7053 /* LotteryResult+Decodable.swift */,
 				90A6A8782170B316008A4BA9 /* JSONDecoder+Extensions.swift */,
+				90A6A87A2170B5F8008A4BA9 /* AllLotteriesResult.swift */,
 			);
 			path = LottoAPI;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				9028BDCB2170769000FE7053 /* Result.swift in Sources */,
 				9028BDCD217077C700FE7053 /* LottoHTTPClient.swift in Sources */,
 				9028BDC72170755600FE7053 /* HttpClient.swift in Sources */,
+				90A6A87B2170B5F8008A4BA9 /* AllLotteriesResult.swift in Sources */,
 				906E6487216DDAE6005F3058 /* GameType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
