@@ -10,5 +10,5 @@ import Foundation
 
 internal protocol HttpClient {
     
-    func getResource(at url: URL, completion: (Result<Any, NSError>) -> Void)
+    func getResource(at url: URL, completion: @escaping (Result<Any, NSError>) -> Void)
 }
