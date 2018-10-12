@@ -12,9 +12,27 @@ extension LotteryResult: Decodable {
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.init(numbers: try container.decode([Int].self, forKey: .numbers),
+        let allNumbersString = try container.decode(String.self, forKey: .numbers)
+        let numbers = try allNumbersString.split(separator: ",").map { strValue -> Int in
+            if let intValue = Int(strValue) {
+                return intValue
+            } else {
+                throw DecodingError.dataCorruptedError(forKey: CodingKeys.numbers,
+                                                       in: container,
+                                                       debugDescription: "could not cast value \(strValue) to int ")
+            }
+        }
+        
+        let gameIdStr = try container.decode(String.self, forKey: .gameId)
+        guard let gameId = Int(gameIdStr) else {
+            throw DecodingError.dataCorruptedError(forKey: CodingKeys.gameId,
+                                                   in: container,
+                                                   debugDescription: "could not cast value \(gameIdStr) to int")
+        }
+        
+        self.init(numbers: numbers,
                   date: try container.decode(Date.self, forKey: .date),
-                  gameId: try container.decode(Int.self, forKey: .gameId))
+                  gameId: gameId)
     }
     
     private enum CodingKeys: String, CodingKey {

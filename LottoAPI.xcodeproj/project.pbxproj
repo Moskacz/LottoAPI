@@ -20,6 +20,7 @@
 		906E647D216DD891005F3058 /* LottoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 906E646F216DD891005F3058 /* LottoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		906E6487216DDAE6005F3058 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906E6486216DDAE6005F3058 /* GameType.swift */; };
 		906E648A216DDBE4005F3058 /* ConfigurationData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 906E6489216DDBE4005F3058 /* ConfigurationData.plist */; };
+		90A6A8792170B316008A4BA9 /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A6A8782170B316008A4BA9 /* JSONDecoder+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		906E647C216DD891005F3058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		906E6486216DDAE6005F3058 /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
 		906E6489216DDBE4005F3058 /* ConfigurationData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ConfigurationData.plist; sourceTree = "<group>"; };
+		90A6A8782170B316008A4BA9 /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				9028BDCC217077C700FE7053 /* LottoHTTPClient.swift */,
 				9028BDD021707D2900FE7053 /* LotteryResult.swift */,
 				9028BDD22170808E00FE7053 /* LotteryResult+Decodable.swift */,
+				90A6A8782170B316008A4BA9 /* JSONDecoder+Extensions.swift */,
 			);
 			path = LottoAPI;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9028BDD32170808E00FE7053 /* LotteryResult+Decodable.swift in Sources */,
+				90A6A8792170B316008A4BA9 /* JSONDecoder+Extensions.swift in Sources */,
 				9028BDD121707D2900FE7053 /* LotteryResult.swift in Sources */,
 				9028BDCB2170769000FE7053 /* Result.swift in Sources */,
 				9028BDCD217077C700FE7053 /* LottoHTTPClient.swift in Sources */,
