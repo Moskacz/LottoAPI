@@ -70,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35FAFA2A21763F9E00CFEA93 /* WebClient */ = {
+			isa = PBXGroup;
+			children = (
+				9028BDCC217077C700FE7053 /* LottoHTTPClient.swift */,
+				9028BDC62170755600FE7053 /* HttpClient.swift */,
+			);
+			path = WebClient;
+			sourceTree = "<group>";
+		};
 		9001C0BC217086B100CB1287 /* jsons */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,13 +116,12 @@
 		906E646E216DD891005F3058 /* LottoAPI */ = {
 			isa = PBXGroup;
 			children = (
+				35FAFA2A21763F9E00CFEA93 /* WebClient */,
 				906E6488216DDBCF005F3058 /* Configuration */,
 				906E646F216DD891005F3058 /* LottoAPI.h */,
 				906E6470216DD891005F3058 /* Info.plist */,
 				906E6486216DDAE6005F3058 /* GameType.swift */,
-				9028BDC62170755600FE7053 /* HttpClient.swift */,
 				9028BDCA2170769000FE7053 /* Result.swift */,
-				9028BDCC217077C700FE7053 /* LottoHTTPClient.swift */,
 				9028BDD021707D2900FE7053 /* LotteryResult.swift */,
 				9028BDD22170808E00FE7053 /* LotteryResult+Decodable.swift */,
 			);
