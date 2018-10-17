@@ -1,5 +1,5 @@
 //
-//  HttpClient.swift
+//  LottoHTTPClient.swift
 //  LottoAPI
 //
 //  Created by Michal Moskala on 12/10/2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal protocol HttpClient {
+public protocol LottoHTTPClient {
     
-    func getResource(at url: URL, completion: @escaping (Result<Any, NSError>) -> Void)
+    func getNewestResults(completion: @escaping (Result<Any>) -> Void)
 }
