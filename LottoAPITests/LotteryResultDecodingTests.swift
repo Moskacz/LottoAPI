@@ -17,7 +17,7 @@ class LotteryResultDecodingTests: XCTestCase {
         XCTAssertEqual(parsedObject.numbers, [17,15,38,9,1,3])
         XCTAssertEqual(parsedObject.gameId, 6163)
         
-        let lotteryDate = Date(timeIntervalSinceReferenceDate: 560725200)// 2018-10-09 00:00 UTC
+        let lotteryDate = Date(timeIntervalSince1970: 1539036000)// 2018-10-08 22:00 UTC
         XCTAssertEqual(parsedObject.date, lotteryDate)
     }
 
