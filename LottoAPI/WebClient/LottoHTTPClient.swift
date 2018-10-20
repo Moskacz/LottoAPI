@@ -10,5 +10,5 @@ import Foundation
 
 public protocol LottoHTTPClient {
     
-    func getNewestResults(completion: @escaping (Result<Any>) -> Void)
+    func getNewestResults(completion: @escaping (Result<LotteriesResults>) -> Void)
 }
