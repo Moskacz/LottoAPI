@@ -1,0 +1,123 @@
+{
+    "Lotto": {
+        "numerki": "23,45,5,33,15,35",
+        "num_losowania": "6167",
+        "data_losowania": "2018-10-18 00:00:00",
+        "superszansa_id": "1729"
+    },
+    "Superszansa": [
+        {
+            "numerki": "9,1,8,2,5,6,7",
+            "num_losowania": "1729",
+            "data_losowania": "2018-10-18 21:40:00",
+            "superszansa_id": null
+        },
+        {
+            "numerki": "4,1,2,6,7,8,1",
+            "num_losowania": "1731",
+            "data_losowania": "2018-10-19 21:40:00",
+            "superszansa_id": null
+        },
+        {
+            "numerki": "4,1,2,6,7,8,1",
+            "num_losowania": "1731",
+            "data_losowania": "2018-10-19 21:40:00",
+            "superszansa_id": null
+        },
+        {
+            "numerki": "1,4,7,4,5,9,4",
+            "num_losowania": "1730",
+            "data_losowania": "2018-10-19 14:00:00",
+            "superszansa_id": null
+        },
+        {
+            "numerki": "4,1,2,6,7,8,1",
+            "num_losowania": "1731",
+            "data_losowania": "2018-10-19 21:40:00",
+            "superszansa_id": null
+        },
+        {
+            "numerki": "1,4,7,4,5,9,4",
+            "num_losowania": "1730",
+            "data_losowania": "2018-10-19 14:00:00",
+            "superszansa_id": null
+        },
+        {
+            "numerki": "4,1,2,6,7,8,1",
+            "num_losowania": "1731",
+            "data_losowania": "2018-10-19 21:40:00",
+            "superszansa_id": null
+        }
+    ],
+    "LottoPlus": {
+        "numerki": "2,10,11,26,33,48",
+        "num_losowania": "965",
+        "data_losowania": "2018-10-18 00:00:00",
+        "superszansa_id": null
+    },
+    "Mini": {
+        "numerki": "31,41,30,2,35",
+        "num_losowania": "4556",
+        "data_losowania": "2018-10-19 00:00:00",
+        "superszansa_id": "1731"
+    },
+    "Joker": {
+        "joker": "59",
+        "numerki": "6,18,12,24",
+        "num_losowania": "736",
+        "data_losowania": "2015-11-11 00:00:00",
+        "superszansa_id": null
+    },
+    "Kaskada1": {
+        "numerki": "8,4,21,24,12,18,11,9,13,23,19,2",
+        "num_losowania": "3640",
+        "data_losowania": "2018-10-19 21:40:00",
+        "superszansa_id": "1731"
+    },
+    "Kaskada2": {
+        "numerki": "19,24,12,16,6,13,18,21,8,14,20,5",
+        "num_losowania": "3639",
+        "data_losowania": "2018-10-19 14:00:00",
+        "superszansa_id": "1730"
+    },
+    "MM1": {
+        "plus": "68",
+        "numerki": "24,12,2,56,44,72,33,19,64,4,10,9,37,61,45,46,55,49,71,68",
+        "num_losowania": "11252",
+        "data_losowania": "2018-10-19 21:40:00",
+        "superszansa_id": "1731"
+    },
+    "MM2": {
+        "plus": "15",
+        "numerki": "50,80,54,25,2,23,36,1,33,47,61,59,76,55,20,68,66,71,77,15",
+        "num_losowania": "11251",
+        "data_losowania": "2018-10-19 14:00:00",
+        "superszansa_id": "1730"
+    },
+    "EkstraPensja": {
+        "extra": "3",
+        "numerki": "22,9,16,1,11",
+        "num_losowania": "895",
+        "data_losowania": "2018-10-19 00:00:00",
+        "superszansa_id": "1731"
+    },
+    "SS1": {
+        "numerki": "4,1,2,6,7,8,1",
+        "num_losowania": "1731",
+        "data_losowania": "2018-10-19 21:40:00",
+        "superszansa_id": null
+    },
+    "SS2": {
+        "numerki": "1,4,7,4,5,9,4",
+        "num_losowania": "1730",
+        "data_losowania": "2018-10-19 14:00:00",
+        "superszansa_id": null
+    },
+    "EJ": {
+        "extra": "7,8",
+        "numerki": "9,48,32,12,28",
+        "num_losowania": "58",
+        "data_losowania": "2018-10-19 00:00:00",
+        "superszansa_id": null
+    }
+}

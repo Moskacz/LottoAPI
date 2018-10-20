@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		35ACB1FD217B1DAD00C77100 /* FakeHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ACB1FC217B1DAD00C77100 /* FakeHttpClient.swift */; };
 		35ACB1FF217B1E2100C77100 /* LottoHttpClientImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ACB1FE217B1E2100C77100 /* LottoHttpClientImplTests.swift */; };
+		35ACB201217B2E2200C77100 /* games.json in Resources */ = {isa = PBXBuildFile; fileRef = 35ACB200217B2E2200C77100 /* games.json */; };
 		35FAFA2C2176464800CFEA93 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FAFA2B2176464800CFEA93 /* HTTPClient.swift */; };
 		35FAFA2E2176468400CFEA93 /* URLSession+HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FAFA2D2176468400CFEA93 /* URLSession+HTTPClient.swift */; };
 		9001C0BE217086F300CB1287 /* lottery_result.json in Resources */ = {isa = PBXBuildFile; fileRef = 9001C0BD217086F300CB1287 /* lottery_result.json */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		35ACB1FC217B1DAD00C77100 /* FakeHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeHttpClient.swift; sourceTree = "<group>"; };
 		35ACB1FE217B1E2100C77100 /* LottoHttpClientImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoHttpClientImplTests.swift; sourceTree = "<group>"; };
+		35ACB200217B2E2200C77100 /* games.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = games.json; sourceTree = "<group>"; };
 		35FAFA2B2176464800CFEA93 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		35FAFA2D2176468400CFEA93 /* URLSession+HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+HTTPClient.swift"; sourceTree = "<group>"; };
 		9001C0BD217086F300CB1287 /* lottery_result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottery_result.json; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		9001C0BC217086B100CB1287 /* jsons */ = {
 			isa = PBXGroup;
 			children = (
+				35ACB200217B2E2200C77100 /* games.json */,
 				9001C0BD217086F300CB1287 /* lottery_result.json */,
 			);
 			path = jsons;
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9001C0BE217086F300CB1287 /* lottery_result.json in Resources */,
+				35ACB201217B2E2200C77100 /* games.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
