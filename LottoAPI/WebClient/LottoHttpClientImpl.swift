@@ -8,41 +8,28 @@
 
 import Foundation
 
-internal class LottoHttpClientImpl {
+internal class LottoHttpClientImpl: LottoHTTPClient {
     
-    private let urlSession: URLSession
+    private let httpClient: HTTPClient
     private let baseURL: URL
     
-    internal init(urlSession: URLSession, baseURL: URL) {
-        self.urlSession = urlSession
+    internal init(httpClient: HTTPClient, baseURL: URL) {
+        self.httpClient = httpClient
         self.baseURL = baseURL
     }
-}
-
-extension LottoHttpClientImpl {
     
-    private enum HttpClientError: Error {
-        case requestFailed
-    }
-    
-    private func getResource(url: URL, completion: @escaping (Result<Data>) -> Void) {
-        let task = urlSession.dataTask(with: url) { (data: Data?, _, error: Error?) in
-            if let responseData = data {
+    func getNewestResults(completion: @escaping (Result<Any>) -> Void) {
+        //http://serwis.mobilotto.pl/mapi_v6/index.php?json=getGames
+        let serviceURL = baseURL.appendingPathComponent("mapi_v6").appendingPathExtension("index.php")
+        var components = URLComponents(url: serviceURL, resolvingAgainstBaseURL: false)!
+        components.queryItems = [URLQueryItem(name: "json", value: "getGames")]
+        httpClient.getResource(url: components.url!) { (result: Result<Data>) in
+            switch result {
+            case .value(let responseData):
                 completion(.value(responseData))
-            } else if let error = error {
+            case .error(let error):
                 completion(.error(error))
-            } else {
-                completion(.error(HttpClientError.requestFailed))
             }
         }
-        
-        task.resume()
-    }
-    
-}
-
-extension LottoHttpClientImpl: LottoHTTPClient {
-    func getNewestResults(completion: @escaping (Result<Any>) -> Void) {
-        
     }
 }
