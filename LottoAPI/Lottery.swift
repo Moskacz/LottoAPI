@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum GameType: String {
+public enum Game: String {
     case lotto = "Lotto"
     case superszansa = "Superszansa"
     case lottoPlus = "LottoPlus"
