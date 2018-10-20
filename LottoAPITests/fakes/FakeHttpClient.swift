@@ -9,7 +9,7 @@
 import Foundation
 @testable import LottoAPI
 
-class HttpClientFake: HTTPClient {
+class FakeHTTPClient: HTTPClient {
     
     var completionResult: Result<Data>?
     var passedURL: URL?

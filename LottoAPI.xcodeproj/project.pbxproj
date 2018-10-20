@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35ACB1FD217B1DAD00C77100 /* FakeHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ACB1FC217B1DAD00C77100 /* FakeHttpClient.swift */; };
+		35ACB1FF217B1E2100C77100 /* LottoHttpClientImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ACB1FE217B1E2100C77100 /* LottoHttpClientImplTests.swift */; };
 		35FAFA2C2176464800CFEA93 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FAFA2B2176464800CFEA93 /* HTTPClient.swift */; };
 		35FAFA2E2176468400CFEA93 /* URLSession+HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FAFA2D2176468400CFEA93 /* URLSession+HTTPClient.swift */; };
 		9001C0BE217086F300CB1287 /* lottery_result.json in Resources */ = {isa = PBXBuildFile; fileRef = 9001C0BD217086F300CB1287 /* lottery_result.json */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		35ACB1FC217B1DAD00C77100 /* FakeHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeHttpClient.swift; sourceTree = "<group>"; };
+		35ACB1FE217B1E2100C77100 /* LottoHttpClientImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoHttpClientImplTests.swift; sourceTree = "<group>"; };
 		35FAFA2B2176464800CFEA93 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		35FAFA2D2176468400CFEA93 /* URLSession+HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+HTTPClient.swift"; sourceTree = "<group>"; };
 		9001C0BD217086F300CB1287 /* lottery_result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottery_result.json; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				9001C0BC217086B100CB1287 /* jsons */,
 				906E647C216DD891005F3058 /* Info.plist */,
 				9001C0C2217088A200CB1287 /* LotteryResultDecodingTests.swift */,
+				35ACB1FE217B1E2100C77100 /* LottoHttpClientImplTests.swift */,
 			);
 			path = LottoAPITests;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				35ACB1FD217B1DAD00C77100 /* FakeHttpClient.swift in Sources */,
 				9001C0C12170874B00CB1287 /* JSONLoader.swift in Sources */,
 				9001C0C3217088A200CB1287 /* LotteryResultDecodingTests.swift in Sources */,
+				35ACB1FF217B1E2100C77100 /* LottoHttpClientImplTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

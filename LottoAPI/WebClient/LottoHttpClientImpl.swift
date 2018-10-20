@@ -19,8 +19,7 @@ internal class LottoHttpClientImpl: LottoHTTPClient {
     }
     
     func getNewestResults(completion: @escaping (Result<Any>) -> Void) {
-        //http://serwis.mobilotto.pl/mapi_v6/index.php?json=getGames
-        let serviceURL = baseURL.appendingPathComponent("mapi_v6").appendingPathExtension("index.php")
+        let serviceURL = baseURL.appendingPathComponent("mapi_v6").appendingPathComponent("index").appendingPathExtension("php")
         var components = URLComponents(url: serviceURL, resolvingAgainstBaseURL: false)!
         components.queryItems = [URLQueryItem(name: "json", value: "getGames")]
         httpClient.getResource(url: components.url!) { (result: Result<Data>) in
