@@ -30,5 +30,30 @@ class LottoHttpClientImplTests: XCTestCase {
         sut.getNewestResults(completion: { _ in })
         XCTAssertEqual(httpClient.passedURL, expectedURL)
     }
+    
+    func test_getNewestResults_decoding() throws {
+        httpClient.completionResult = Result.value(try JSONLoader.jsonData(name: "games"))
+        
+        let exp = expectation(description: "response decoded")
+        
+        sut.getNewestResults { (result) in
+            switch result {
+            case .error(_):
+                XCTFail()
+            case .value(let lotteriesResult):
+                XCTAssertNotNil(lotteriesResult.lotto)
+                XCTAssertNotNil(lotteriesResult.superszansa)
+                XCTAssertNotNil(lotteriesResult.lottoPlus)
+                XCTAssertNotNil(lotteriesResult.mini)
+                XCTAssertNotNil(lotteriesResult.kaskada1)
+                XCTAssertNotNil(lotteriesResult.kaskada2)
+                XCTAssertNotNil(lotteriesResult.ss1)
+                XCTAssertNotNil(lotteriesResult.ss2)
+                exp.fulfill()
+            }
+        }
+        
+        waitForExpectations(timeout: 0.2, handler: nil)
+    }
 
 }
