@@ -14,7 +14,7 @@ extension JSONDecoder {
         let decoder = JSONDecoder()
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "PL_pl")
-        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         decoder.dateDecodingStrategy = .formatted(dateFormatter)
         return decoder
     }
