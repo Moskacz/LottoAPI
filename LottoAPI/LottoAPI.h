@@ -6,14 +6,8 @@
 //  Copyright © 2018 Michal Moskala. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-//! Project version number for LottoAPI.
+#import <Foundation/Foundation.h>
 FOUNDATION_EXPORT double LottoAPIVersionNumber;
-
-//! Project version string for LottoAPI.
 FOUNDATION_EXPORT const unsigned char LottoAPIVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <LottoAPI/PublicHeader.h>
 
 

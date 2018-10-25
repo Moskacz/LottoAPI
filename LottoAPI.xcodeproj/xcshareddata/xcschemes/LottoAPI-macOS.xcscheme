@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "906E646B216DD891005F3058"
-               BuildableName = "LottoAPIiOS.framework"
-               BlueprintName = "LottoAPIiOS"
+               BlueprintIdentifier = "90122C432181A91C00917483"
+               BuildableName = "LottoAPI.framework"
+               BlueprintName = "LottoAPI-macOS"
                ReferencedContainer = "container:LottoAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,19 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "906E6474216DD891005F3058"
-               BuildableName = "LottoAPIiOSTests.xctest"
-               BlueprintName = "LottoAPIiOSTests"
-               ReferencedContainer = "container:LottoAPI.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "35F781E2217CCCD0008D2C2D"
-               BuildableName = "LottoAPIIntegrationTests.xctest"
-               BlueprintName = "LottoAPIIntegrationTests"
+               BlueprintIdentifier = "90122C4B2181A91D00917483"
+               BuildableName = "LottoAPITests-macOS.xctest"
+               BlueprintName = "LottoAPITests-macOS"
                ReferencedContainer = "container:LottoAPI.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -52,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "906E646B216DD891005F3058"
-            BuildableName = "LottoAPIiOS.framework"
-            BlueprintName = "LottoAPIiOS"
+            BlueprintIdentifier = "90122C432181A91C00917483"
+            BuildableName = "LottoAPI.framework"
+            BlueprintName = "LottoAPI-macOS"
             ReferencedContainer = "container:LottoAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -74,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "906E646B216DD891005F3058"
-            BuildableName = "LottoAPIiOS.framework"
-            BlueprintName = "LottoAPIiOS"
+            BlueprintIdentifier = "90122C432181A91C00917483"
+            BuildableName = "LottoAPI.framework"
+            BlueprintName = "LottoAPI-macOS"
             ReferencedContainer = "container:LottoAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -92,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "906E646B216DD891005F3058"
-            BuildableName = "LottoAPIiOS.framework"
-            BlueprintName = "LottoAPIiOS"
+            BlueprintIdentifier = "90122C432181A91C00917483"
+            BuildableName = "LottoAPI.framework"
+            BlueprintName = "LottoAPI-macOS"
             ReferencedContainer = "container:LottoAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
