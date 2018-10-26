@@ -14,10 +14,11 @@ class FakeHTTPClient: HTTPClient {
     var completionResult: Result<Data>?
     var passedURL: URL?
     
-    func getResource(url: URL, completion: @escaping (Result<Data>) -> Void) {
+    @discardableResult func getResource(url: URL, completion: @escaping (Result<Data>) -> Void) -> URLSessionDataTask {
         passedURL = url
         if let result = completionResult {
             completion(result)
         }
+        return URLSessionDataTask()
     }
 }

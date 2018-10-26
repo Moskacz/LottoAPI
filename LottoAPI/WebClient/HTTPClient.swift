@@ -9,5 +9,5 @@
 import Foundation
 
 internal protocol HTTPClient {
-    func getResource(url: URL, completion: @escaping (Result<Data>) -> Void)
+    @discardableResult func getResource(url: URL, completion: @escaping (Result<Data>) -> Void) -> URLSessionDataTask
 }

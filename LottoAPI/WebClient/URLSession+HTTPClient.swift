@@ -14,7 +14,7 @@ extension URLSession: HTTPClient {
         case requestFailed
     }
     
-    func getResource(url: URL, completion: @escaping (Result<Data>) -> Void) {
+    @discardableResult func getResource(url: URL, completion: @escaping (Result<Data>) -> Void) -> URLSessionDataTask {
         let task = dataTask(with: url) { (data: Data?, _, error: Error?) in
             if let responseData = data {
                 completion(.value(responseData))
@@ -26,5 +26,6 @@ extension URLSession: HTTPClient {
         }
         
         task.resume()
+        return task
     }
 }

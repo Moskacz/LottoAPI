@@ -18,11 +18,11 @@ internal class LottoHttpClientImpl: LottoHTTPClient {
         self.baseURL = baseURL
     }
     
-    func getNewestResults(completion: @escaping (Result<LotteriesResults>) -> Void) {
+    @discardableResult func getNewestResults(completion: @escaping (Result<LotteriesResults>) -> Void) -> URLSessionDataTask {
         let serviceURL = baseURL.appendingPathComponent("mapi_v6").appendingPathComponent("index").appendingPathExtension("php")
         var components = URLComponents(url: serviceURL, resolvingAgainstBaseURL: false)!
         components.queryItems = [URLQueryItem(name: "json", value: "getGames")]
-        httpClient.getResource(url: components.url!) { (result: Result<Data>) in
+        return httpClient.getResource(url: components.url!) { (result: Result<Data>) in
             switch result {
             case .value(let responseData):
                 do {

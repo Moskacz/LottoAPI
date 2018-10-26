@@ -10,5 +10,5 @@ import Foundation
 
 public protocol LottoHTTPClient {
     
-    func getNewestResults(completion: @escaping (Result<LotteriesResults>) -> Void)
+    @discardableResult func getNewestResults(completion: @escaping (Result<LotteriesResults>) -> Void) -> URLSessionDataTask
 }
