@@ -40,8 +40,6 @@
 		9028BDCD217077C700FE7053 /* LottoHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028BDCC217077C700FE7053 /* LottoHTTPClient.swift */; };
 		9028BDD121707D2900FE7053 /* LotteryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028BDD021707D2900FE7053 /* LotteryResult.swift */; };
 		9028BDD32170808E00FE7053 /* LotteryResult+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028BDD22170808E00FE7053 /* LotteryResult+Decodable.swift */; };
-		90445E7E218307800011B0E5 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90445E7D218307800011B0E5 /* Cancelable.swift */; };
-		90445E7F218307800011B0E5 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90445E7D218307800011B0E5 /* Cancelable.swift */; };
 		90445E81218307F30011B0E5 /* URLSessionDataTask+Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90445E80218307F30011B0E5 /* URLSessionDataTask+Cancelable.swift */; };
 		90445E82218307F30011B0E5 /* URLSessionDataTask+Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90445E80218307F30011B0E5 /* URLSessionDataTask+Cancelable.swift */; };
 		906E6476216DD891005F3058 /* LottoAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906E646C216DD891005F3058 /* LottoAPI.framework */; };
@@ -97,7 +95,6 @@
 		9028BDCC217077C700FE7053 /* LottoHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoHTTPClient.swift; sourceTree = "<group>"; };
 		9028BDD021707D2900FE7053 /* LotteryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryResult.swift; sourceTree = "<group>"; };
 		9028BDD22170808E00FE7053 /* LotteryResult+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LotteryResult+Decodable.swift"; sourceTree = "<group>"; };
-		90445E7D218307800011B0E5 /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
 		90445E80218307F30011B0E5 /* URLSessionDataTask+Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionDataTask+Cancelable.swift"; sourceTree = "<group>"; };
 		906E646C216DD891005F3058 /* LottoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LottoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		906E646F216DD891005F3058 /* LottoAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottoAPI.h; sourceTree = "<group>"; };
@@ -174,7 +171,6 @@
 				9028BDC62170755600FE7053 /* LottoHttpClientImpl.swift */,
 				35FAFA2B2176464800CFEA93 /* HTTPClient.swift */,
 				35FAFA2D2176468400CFEA93 /* URLSession+HTTPClient.swift */,
-				90445E7D218307800011B0E5 /* Cancelable.swift */,
 				90445E80218307F30011B0E5 /* URLSessionDataTask+Cancelable.swift */,
 			);
 			path = WebClient;
@@ -492,7 +488,6 @@
 			files = (
 				90122C602181A99600917483 /* LotteryResult.swift in Sources */,
 				90122C5B2181A97200917483 /* LottoHTTPClient.swift in Sources */,
-				90445E7F218307800011B0E5 /* Cancelable.swift in Sources */,
 				90122C622181A99C00917483 /* JSONDecoder+Extensions.swift in Sources */,
 				90122C5F2181A99300917483 /* Result.swift in Sources */,
 				90122C5C2181A98A00917483 /* LottoHttpClientImpl.swift in Sources */,
@@ -522,7 +517,6 @@
 			files = (
 				35FAFA2E2176468400CFEA93 /* URLSession+HTTPClient.swift in Sources */,
 				9028BDD32170808E00FE7053 /* LotteryResult+Decodable.swift in Sources */,
-				90445E7E218307800011B0E5 /* Cancelable.swift in Sources */,
 				90A6A8792170B316008A4BA9 /* JSONDecoder+Extensions.swift in Sources */,
 				9028BDD121707D2900FE7053 /* LotteryResult.swift in Sources */,
 				9028BDCB2170769000FE7053 /* Result.swift in Sources */,
