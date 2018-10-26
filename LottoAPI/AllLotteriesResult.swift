@@ -10,14 +10,14 @@ import Foundation
 
 public struct LotteriesResults: Decodable {
     
-    let lotto: LotteryResult?
-    let superszansa: [LotteryResult]?
-    let lottoPlus: LotteryResult?
-    let mini: LotteryResult?
-    let kaskada1: LotteryResult?
-    let kaskada2: LotteryResult?
-    let ss1: LotteryResult?
-    let ss2: LotteryResult?
+    public let lotto: LotteryResult?
+    public let superszansa: [LotteryResult]?
+    public let lottoPlus: LotteryResult?
+    public let mini: LotteryResult?
+    public let kaskada1: LotteryResult?
+    public let kaskada2: LotteryResult?
+    public let ss1: LotteryResult?
+    public let ss2: LotteryResult?
     
     enum CodingKeys: String, CodingKey {
         case lotto = "Lotto"
