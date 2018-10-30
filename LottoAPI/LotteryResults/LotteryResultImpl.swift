@@ -53,3 +53,16 @@ class LotteryResultJokerPlus: LotteryResultImpl, LotteryResultPlus {
         case plus
     }
 }
+
+class LotteryResultJokerExtra: LotteryResultImpl, LotteryResultExtra {
+    let extra: [Int]
+    
+    required init(from decoder: Decoder) throws {
+        self.extra = try decoder.container(keyedBy: CodingKeys.self).decodeStringIntArray(key: .extra)
+        try super.init(from: decoder)
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case extra
+    }
+}
