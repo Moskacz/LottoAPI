@@ -43,6 +43,12 @@
 		905BE2E42188564A008C1E06 /* LotteriesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905BE2E22188564A008C1E06 /* LotteriesResults.swift */; };
 		905BE2E6218856C2008C1E06 /* LotteriesResultsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905BE2E5218856C2008C1E06 /* LotteriesResultsImpl.swift */; };
 		905BE2E7218856C2008C1E06 /* LotteriesResultsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905BE2E5218856C2008C1E06 /* LotteriesResultsImpl.swift */; };
+		905BE2F2218863F3008C1E06 /* extra.json in Resources */ = {isa = PBXBuildFile; fileRef = 905BE2EB21886344008C1E06 /* extra.json */; };
+		905BE2F3218863F3008C1E06 /* extra.json in Resources */ = {isa = PBXBuildFile; fileRef = 905BE2EB21886344008C1E06 /* extra.json */; };
+		905BE2F4218863F8008C1E06 /* plus.json in Resources */ = {isa = PBXBuildFile; fileRef = 905BE2EA21886344008C1E06 /* plus.json */; };
+		905BE2F5218863F8008C1E06 /* plus.json in Resources */ = {isa = PBXBuildFile; fileRef = 905BE2EA21886344008C1E06 /* plus.json */; };
+		905BE2F6218863FC008C1E06 /* joker.json in Resources */ = {isa = PBXBuildFile; fileRef = 905BE2E921886343008C1E06 /* joker.json */; };
+		905BE2F7218863FD008C1E06 /* joker.json in Resources */ = {isa = PBXBuildFile; fileRef = 905BE2E921886343008C1E06 /* joker.json */; };
 		906E6476216DD891005F3058 /* LottoAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906E646C216DD891005F3058 /* LottoAPI.framework */; };
 		906E647D216DD891005F3058 /* LottoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 906E646F216DD891005F3058 /* LottoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90A315B5217F059C00C42AA8 /* LottoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A315B4217F059C00C42AA8 /* LottoAPI.swift */; };
@@ -97,6 +103,9 @@
 		905BE2DF218853E6008C1E06 /* LotteryResultImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryResultImpl.swift; sourceTree = "<group>"; };
 		905BE2E22188564A008C1E06 /* LotteriesResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteriesResults.swift; sourceTree = "<group>"; };
 		905BE2E5218856C2008C1E06 /* LotteriesResultsImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteriesResultsImpl.swift; sourceTree = "<group>"; };
+		905BE2E921886343008C1E06 /* joker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = joker.json; sourceTree = "<group>"; };
+		905BE2EA21886344008C1E06 /* plus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plus.json; sourceTree = "<group>"; };
+		905BE2EB21886344008C1E06 /* extra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = extra.json; sourceTree = "<group>"; };
 		906E646C216DD891005F3058 /* LottoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LottoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		906E646F216DD891005F3058 /* LottoAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottoAPI.h; sourceTree = "<group>"; };
 		906E6470216DD891005F3058 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -178,6 +187,9 @@
 		9001C0BC217086B100CB1287 /* jsons */ = {
 			isa = PBXGroup;
 			children = (
+				905BE2EB21886344008C1E06 /* extra.json */,
+				905BE2E921886343008C1E06 /* joker.json */,
+				905BE2EA21886344008C1E06 /* plus.json */,
 				35ACB200217B2E2200C77100 /* games.json */,
 				9001C0BD217086F300CB1287 /* lottery_result.json */,
 			);
@@ -467,6 +479,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				90122C682181A9B200917483 /* lottery_result.json in Resources */,
+				905BE2F4218863F8008C1E06 /* plus.json in Resources */,
+				905BE2F3218863F3008C1E06 /* extra.json in Resources */,
+				905BE2F6218863FC008C1E06 /* joker.json in Resources */,
 				90122C672181A9AF00917483 /* games.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +498,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9001C0BE217086F300CB1287 /* lottery_result.json in Resources */,
+				905BE2F5218863F8008C1E06 /* plus.json in Resources */,
+				905BE2F2218863F3008C1E06 /* extra.json in Resources */,
+				905BE2F7218863FD008C1E06 /* joker.json in Resources */,
 				35ACB201217B2E2200C77100 /* games.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,5 +20,22 @@ class LotteryResultDecodingTests: XCTestCase {
         let lotteryDate = Date(timeIntervalSince1970: 1539036000)// 2018-10-08 22:00 UTC
         XCTAssertEqual(parsedObject.date, lotteryDate)
     }
-
+    
+    func test_decode_plus() throws {
+        let jsonData = try JSONLoader.jsonData(name: "plus")
+        let parsedObject = try JSONDecoder.configured.decode(LotteryResultPlusImpl.self, from: jsonData)
+        XCTAssertEqual(parsedObject.plus, 15)
+    }
+    
+    func test_decode_joker() throws {
+        let jsonData = try JSONLoader.jsonData(name: "joker")
+        let parsedObject = try JSONDecoder.configured.decode(LotteryResultJokerImpl.self, from: jsonData)
+        XCTAssertEqual(parsedObject.joker, 59)
+    }
+    
+    func test_decode_extra() throws {
+        let jsonData = try JSONLoader.jsonData(name: "extra")
+        let parsedObject = try JSONDecoder.configured.decode(LotteryResultExtraImpl.self, from: jsonData)
+        XCTAssertEqual(parsedObject.extra, [7,8])
+    }
 }

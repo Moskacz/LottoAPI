@@ -32,7 +32,7 @@ class LotteryResultJokerImpl: LotteryResultImpl, LotteryResultJoker {
     let joker: Int
     
     required init(from decoder: Decoder) throws {
-        self.joker = try decoder.container(keyedBy: CodingKeys.self).decode(Int.self, forKey: .joker)
+        self.joker = try decoder.container(keyedBy: CodingKeys.self).decodeStringInt(key: .joker)
         try super.init(from: decoder)
     }
     
@@ -41,11 +41,11 @@ class LotteryResultJokerImpl: LotteryResultImpl, LotteryResultJoker {
     }
 }
 
-class LotteryResultJokerPlus: LotteryResultImpl, LotteryResultPlus {
+class LotteryResultPlusImpl: LotteryResultImpl, LotteryResultPlus {
     let plus: Int
     
     required init(from decoder: Decoder) throws {
-        self.plus = try decoder.container(keyedBy: CodingKeys.self).decode(Int.self, forKey: .plus)
+        self.plus = try decoder.container(keyedBy: CodingKeys.self).decodeStringInt(key: .plus)
         try super.init(from: decoder)
     }
     
@@ -54,7 +54,7 @@ class LotteryResultJokerPlus: LotteryResultImpl, LotteryResultPlus {
     }
 }
 
-class LotteryResultJokerExtra: LotteryResultImpl, LotteryResultExtra {
+class LotteryResultExtraImpl: LotteryResultImpl, LotteryResultExtra {
     let extra: [Int]
     
     required init(from decoder: Decoder) throws {
