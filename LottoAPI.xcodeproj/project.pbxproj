@@ -220,6 +220,14 @@
 			path = LotteryResults;
 			sourceTree = "<group>";
 		};
+		905BE2E821885D80008C1E06 /* Codeable */ = {
+			isa = PBXGroup;
+			children = (
+				90A6A8782170B316008A4BA9 /* JSONDecoder+Extensions.swift */,
+			);
+			path = Codeable;
+			sourceTree = "<group>";
+		};
 		906E6462216DD891005F3058 = {
 			isa = PBXGroup;
 			children = (
@@ -245,12 +253,12 @@
 		906E646E216DD891005F3058 /* LottoAPI */ = {
 			isa = PBXGroup;
 			children = (
+				905BE2E821885D80008C1E06 /* Codeable */,
 				905BE2DB2188535B008C1E06 /* LotteryResults */,
 				35FAFA2A21763F9E00CFEA93 /* WebClient */,
 				906E6488216DDBCF005F3058 /* Configuration */,
 				906E646F216DD891005F3058 /* LottoAPI.h */,
 				9028BDCA2170769000FE7053 /* Result.swift */,
-				90A6A8782170B316008A4BA9 /* JSONDecoder+Extensions.swift */,
 				90A315B4217F059C00C42AA8 /* LottoAPI.swift */,
 			);
 			path = LottoAPI;

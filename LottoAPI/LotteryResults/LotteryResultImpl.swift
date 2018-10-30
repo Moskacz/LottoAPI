@@ -17,6 +17,7 @@ class LotteryResultImpl: LotteryResult, Decodable {
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let allNumbersString = try container.decode(String.self, forKey: .numbers)
+        
         let numbers = try allNumbersString.split(separator: ",").map { strValue -> Int in
             if let intValue = Int(strValue) {
                 return intValue
