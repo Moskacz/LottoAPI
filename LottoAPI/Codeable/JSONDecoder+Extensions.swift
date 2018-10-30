@@ -20,3 +20,31 @@ extension JSONDecoder {
     }
     
 }
+
+extension KeyedDecodingContainer {
+    
+    func decodeStringInt(key: KeyedDecodingContainer.Key) throws -> Int {
+        let stringVal = try decode(String.self, forKey: key)
+        return try convertToInt(stringVal: stringVal, key: key)
+    }
+    
+    func decodeStringIntArray(key: KeyedDecodingContainer.Key) throws -> [Int] {
+        let allNumbersString = try decode(String.self, forKey: key)
+        
+        let numbers = try allNumbersString.split(separator: ",").map { strValue -> Int in
+            try convertToInt(stringVal: strValue, key: key)
+        }
+        
+        return numbers
+    }
+    
+    private func convertToInt<T: StringProtocol>(stringVal: T, key: KeyedDecodingContainer.Key) throws -> Int {
+        guard let intVal = Int(stringVal) else {
+            throw DecodingError.dataCorruptedError(forKey: key,
+                                                   in: self,
+                                                   debugDescription: "could not cast value \(stringVal) to int ")
+        }
+        return intVal
+    }
+    
+}
