@@ -13,7 +13,7 @@ class LotteryResultDecodingTests: XCTestCase {
 
     func test_decode() throws {
         let jsonData = try JSONLoader.jsonData(name: "lottery_result")
-        let parsedObject = try JSONDecoder.configured.decode(LotteryResult.self, from: jsonData)
+        let parsedObject = try JSONDecoder.configured.decode(LotteryResultImpl.self, from: jsonData)
         XCTAssertEqual(parsedObject.numbers, [17,15,38,9,1,3])
         XCTAssertEqual(parsedObject.gameId, 6163)
         

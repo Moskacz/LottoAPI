@@ -26,7 +26,7 @@ internal class LottoHttpClientImpl: LottoHTTPClient {
             switch result {
             case .value(let responseData):
                 do {
-                    let lotteriesResults = try JSONDecoder.configured.decode(LotteriesResults.self, from: responseData)
+                    let lotteriesResults = try JSONDecoder.configured.decode(LotteriesResultsImpl.self, from: responseData)
                     completion(.value(lotteriesResults))
                 } catch {
                     completion(.error(error))
