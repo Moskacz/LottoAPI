@@ -8,6 +8,6 @@
 
 import Foundation
 
-internal protocol HTTPClient {
+protocol HTTPClient {
     @discardableResult func getResource(url: URL, completion: @escaping (Result<Data>) -> Void) -> URLSessionDataTask
 }

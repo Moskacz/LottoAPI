@@ -45,3 +45,29 @@ class LotteryResultImpl: LotteryResult, Decodable {
         case gameId = "num_losowania"
     }
 }
+
+class LotteryResultJokerImpl: LotteryResultImpl, LotteryResultJoker {
+    let joker: Int
+    
+    required init(from decoder: Decoder) throws {
+        self.joker = try decoder.container(keyedBy: CodingKeys.self).decode(Int.self, forKey: .joker)
+        try super.init(from: decoder)
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case joker
+    }
+}
+
+class LotteryResultJokerPlus: LotteryResultImpl, LotteryResultPlus {
+    let plus: Int
+    
+    required init(from decoder: Decoder) throws {
+        self.plus = try decoder.container(keyedBy: CodingKeys.self).decode(Int.self, forKey: .plus)
+        try super.init(from: decoder)
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case plus
+    }
+}
