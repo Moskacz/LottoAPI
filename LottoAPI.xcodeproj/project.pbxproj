@@ -35,6 +35,8 @@
 		90122C702181AF3A00917483 /* LottoAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 906E646F216DD891005F3058 /* LottoAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		901E0CF12189A70B006C271C /* LotteriesResultsImplDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E0CF02189A70B006C271C /* LotteriesResultsImplDecodingTests.swift */; };
 		901E0CF22189A70B006C271C /* LotteriesResultsImplDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E0CF02189A70B006C271C /* LotteriesResultsImplDecodingTests.swift */; };
+		901E0CF42189A91A006C271C /* LottoAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E0CF32189A91A006C271C /* LottoAPITests.swift */; };
+		901E0CF52189A91A006C271C /* LottoAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901E0CF32189A91A006C271C /* LottoAPITests.swift */; };
 		9028BDCB2170769000FE7053 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028BDCA2170769000FE7053 /* Result.swift */; };
 		9028BDCD217077C700FE7053 /* LottoHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9028BDCC217077C700FE7053 /* LottoHTTPClient.swift */; };
 		905BE2DD21885384008C1E06 /* LotteryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905BE2DC21885384008C1E06 /* LotteryResult.swift */; };
@@ -99,6 +101,7 @@
 		90122C532181A91D00917483 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		90122C6E2181AE1E00917483 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		901E0CF02189A70B006C271C /* LotteriesResultsImplDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteriesResultsImplDecodingTests.swift; sourceTree = "<group>"; };
+		901E0CF32189A91A006C271C /* LottoAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoAPITests.swift; sourceTree = "<group>"; };
 		9028BDC62170755600FE7053 /* LottoHttpClientImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoHttpClientImpl.swift; sourceTree = "<group>"; };
 		9028BDCA2170769000FE7053 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		9028BDCC217077C700FE7053 /* LottoHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoHTTPClient.swift; sourceTree = "<group>"; };
@@ -289,6 +292,7 @@
 				9001C0C2217088A200CB1287 /* LotteryResultDecodingTests.swift */,
 				35ACB1FE217B1E2100C77100 /* LottoHttpClientImplTests.swift */,
 				901E0CF02189A70B006C271C /* LotteriesResultsImplDecodingTests.swift */,
+				901E0CF32189A91A006C271C /* LottoAPITests.swift */,
 			);
 			path = LottoAPITests;
 			sourceTree = "<group>";
@@ -545,6 +549,7 @@
 				90122C6A2181A9BF00917483 /* LottoHttpClientImplTests.swift in Sources */,
 				90122C652181A9A700917483 /* FakeHttpClient.swift in Sources */,
 				90122C692181A9BC00917483 /* LotteryResultDecodingTests.swift in Sources */,
+				901E0CF52189A91A006C271C /* LottoAPITests.swift in Sources */,
 				901E0CF22189A70B006C271C /* LotteriesResultsImplDecodingTests.swift in Sources */,
 				90122C662181A9AB00917483 /* JSONLoader.swift in Sources */,
 			);
@@ -575,6 +580,7 @@
 				35ACB1FD217B1DAD00C77100 /* FakeHttpClient.swift in Sources */,
 				9001C0C12170874B00CB1287 /* JSONLoader.swift in Sources */,
 				9001C0C3217088A200CB1287 /* LotteryResultDecodingTests.swift in Sources */,
+				901E0CF42189A91A006C271C /* LottoAPITests.swift in Sources */,
 				901E0CF12189A70B006C271C /* LotteriesResultsImplDecodingTests.swift in Sources */,
 				35ACB1FF217B1E2100C77100 /* LottoHttpClientImplTests.swift in Sources */,
 			);
